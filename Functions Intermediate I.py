@@ -22,3 +22,46 @@ print(sports_directory)
 z[0]['y']= 30 
 print(z)
 
+#2 Iterate Through a List of Dictionaries
+
+def iterateDictionary(students):
+    students = [
+         {'first_name':  'Michael', 'last_name' : 'Jordan'},
+         {'first_name' : 'John', 'last_name' : 'Rosales'},
+         {'first_name' : 'Mark', 'last_name' : 'Guillen'},
+         {'first_name' : 'KB', 'last_name' : 'Tonel'}]
+    for i in range(len(students)):
+        print('first name -', students[i]['first_name'] , 'last name -' , students[i]['last_name'])
+
+iterateDictionary(students)
+
+
+#3 Get Values From a List of Dictionaries
+
+def iterateDictionary2(students):
+    students = [
+         {'first_name':  'Michael', 'last_name' : 'Jordan'},
+         {'first_name' : 'John', 'last_name' : 'Rosales'},
+         {'first_name' : 'Mark', 'last_name' : 'Guillen'},
+         {'first_name' : 'KB', 'last_name' : 'Tonel'}]
+    for i in range(len(students)):
+        print(students[i]['first_name'])
+        print(students[i]['last_name'])
+iterateDictionary2(students)
+
+
+#4 Iterate Through a Dictionary with List Values
+
+def printInfo():
+    dojo = {
+   'locations': ['San Jose', 'Seattle', 'Dallas', 'Chicago', 'Tulsa', 'DC', 'Burbank'],
+   'instructors': ['Michael', 'Amy', 'Eduardo', 'Josh', 'Graham', 'Patrick', 'Minh', 'Devon']
+   }
+    print(len(dojo['locations']), "Locations")
+    for location in dojo['locations']:
+        print(location)
+    print(len(dojo['instructors']), "Instructors")
+    for location in dojo['instructors']:
+        print(location)
+
+printInfo()
